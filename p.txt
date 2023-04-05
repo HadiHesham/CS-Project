@@ -1,0 +1,10 @@
+1    tomato    5.3    5000    vegetable    saudi
+2    mango    8.1    5000    fruits    7mart
+3    lettuce    6.4    5000    vegetable    saudi
+4    banana    7.8    4960    fruit    saudi
+5    kiwi    2    5000    fruit    7mart
+6    yoghurt    3.2    4996    dairy    7mart
+7    carrot    7.6    5000    vegetable    saudi
+8    lemon    4.7    5000    fruit    saudi
+9    apples    5.1    5000    fruits    saudi
+10    oranges    4.1    4950    fruits    7mart
