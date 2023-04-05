@@ -14,7 +14,7 @@ private:
 public:
     CreditCard()
     {
-        ifstream r("/Users/macbook/Desktop/Credit Card.txt");
+        ifstream r("Credit Card.txt");
         while(!r.eof())
         {
             r >>  Card[i].CardOwnerName >> Card[i].CardNumber >> Card[i].Pincode >> Card[i].Wallet;
@@ -85,7 +85,7 @@ public:
     void update()
     {
         ofstream w;
-        w.open("/Users/macbook/Desktop/Credit Card.txt");
+        w.open("Credit Card.txt");
         for(int j=0;j<i;j++)
         {
                 w << Card[j].CardOwnerName <<"    "<< Card[j].CardNumber <<"    "<< Card[j].Pincode <<"    "<< Card[j].Wallet<<endl;
@@ -107,7 +107,7 @@ private:
 public:
     User()
     {
-        ifstream myfile("/Users/macbook/Desktop/User.txt");
+        ifstream myfile("User.txt");
         while(!myfile.eof())
         {
             myfile >>F[i].id >> F[i].username >> F[i].password >> F[i].MoneySpent ;
@@ -189,7 +189,7 @@ public:
     void update()
     {
         ofstream w;
-        w.open("/Users/macbook/Desktop/User.txt");
+        w.open("User.txt");
         for(int j=0;j<i;j++)
             w<<F[j].id<<"    "<<F[j].username<<"    "<<F[j].password<<"    "<<F[j].MoneySpent<<endl;
         w.close();
@@ -238,7 +238,7 @@ private:
 public:
     SuperMarket()
     {
-        ifstream myfile("/Users/macbook/Desktop/p.txt");
+        ifstream myfile("p.txt");
         while(!myfile.eof())
         {
             myfile >>market[index].id >> market[index].Name >> market[index].Price >> market[index].quantity >>market[index].category>>market[index].marketname;
@@ -285,7 +285,7 @@ public:
     }
     void DisplayMarketCategories()
     {
-            ifstream r("/Users/macbook/Desktop/Categories.txt");
+            ifstream r("Categories.txt");
             string category;
             while(!r.eof())
             {
@@ -331,7 +331,7 @@ public:
     }
     void update()
     {
-        ofstream w("/Users/macbook/Desktop/p.txt");
+        ofstream w("p.txt");
         for(int i=0;i<index;i++)
         {
             if(market[i].id!=-1)
